@@ -1,0 +1,17 @@
+﻿<Window
+    x:Class="Winui3Camera.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Winui3Camera"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button Content="Open Camera" Click="myButton_Click"/>
+        <controls:CameraPreview x:Name="CPTest" HorizontalAlignment="Left" 
+                                    Height="336" Margin="44,164,0,0"
+                                    VerticalAlignment="Top" Width="414"/>
+    </StackPanel>
+</Window>
